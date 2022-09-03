@@ -1,0 +1,47 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main class="max-w-screen-sm mx-auto mt-32 px-6">
+      <h1 class="text-5xl mb-6">
+        <span class="inline-block bg-slate-800 text-white px-4 py-2">
+          About me.
+        </span>
+      </h1>
+      <div class="prose lg:prose-xl">
+        <p>
+          <strong>Indra Pratama Putra, S.H, M.Kn</strong>. Seorang yang secara
+          sengaja jatuh dan berkelana di bidang hukum terutama di bidang
+          kenotariatan. Setelah selesai menempuh pendidikan Strata-1, Strata-2
+          dan bekerja di kantor Notaris selama kurang lebih 6 tahun, kini
+          menjalani tugas dengan membuka kantor di Kabupaten Garut.
+        </p>
+        <p>
+          Selain terjun ke dunia kenotariatan, saya juga sangat tertarik pada
+          dunia design dan teknologi.
+        </p>
+        <p>
+          Blog ini hanya tulisan saya yang berisi opini, jurnal harian, artikel
+          yang berkaitan tentang apa yang saya anggap menarik.
+        </p>
+
+        <p>
+          Source code website ini bisa dilihat di <a
+            href="https://github.com/indraptama/indra-is.my.id">Github.</a
+          >
+        </p>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
