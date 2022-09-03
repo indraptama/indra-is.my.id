@@ -1,0 +1,43 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		pubDate?: string;
+		updatedDate?: string;
+		heroImage?: string;
+	};
+}
+
+const {
+	content: { title, description},
+} = Astro.props;
+---
+
+
+<html>
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+		<main class="mt-16 text-slate-900 px-6">
+			<article class="max-w-screen-sm mx-auto pt-10">
+				<h2 class="text-5xl mb-6">
+					<span class="inline-block bg-slate-800 text-white px-4 py-2">
+						{title}
+					</span>
+				</h2>
+				<div class="prose lg:prose-xl">
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
