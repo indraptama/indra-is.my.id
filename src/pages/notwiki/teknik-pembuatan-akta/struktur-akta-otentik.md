@@ -1,4 +1,7 @@
-# Struktur Akta Otentik
+---
+layout: '../../../layouts/WikiPost.astro'
+title: Struktur Akta Otentik
+---
 
 Ketentuan Pasal 38 ayat (1) Undang-undang Jabatan Notaris menyebutkan bahwa setiap akta notaris terdiri atas:
 

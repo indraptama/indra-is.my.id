@@ -1,3 +1,5 @@
 ---
-layout: '../../layouts/WikiPost.astro
-___
+layout: '../../layouts/WikiPost.astro'
+---
+
+ini test aj

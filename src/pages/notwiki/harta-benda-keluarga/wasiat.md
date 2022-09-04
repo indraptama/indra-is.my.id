@@ -1,4 +1,7 @@
-# Wasiat
+---
+layout: '../../../layouts/WikiPost.astro'
+title: Wasiat
+---
 
 ## Pengertian Umum
 Surat wasiat berisikan keinginan atau kehendak terakhir pewaris sebelum meninggal dunia. ungkapan keinginan atau kehendak terakhir pewaris mempunyai dua arti yakni, arti materil dan arti formil. 

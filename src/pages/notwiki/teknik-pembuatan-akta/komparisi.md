@@ -1,5 +1,7 @@
-# Komparisi
-
+---
+layout: '../../../layouts/WikiPost.astro'
+title: Komparisi
+---
 ## Bertindak Sendiri
 
 ### Bertindak Untuk diri Sendiri dan Belum Menikah
