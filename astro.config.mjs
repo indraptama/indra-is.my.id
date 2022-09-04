@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import a11yEmoji from '@fec/remark-a11y-emoji';
 import remarkToc from 'remark-toc';
+import remarkEmoji from 'remark-emoji'
 
 import tailwind from "@astrojs/tailwind";
 
@@ -12,6 +12,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
     extendDefaultPlugins: true,
-    remarkPlugins: [a11yEmoji, remarkToc]
+    remarkPlugins: [remarkEmoji, remarkToc],
   }
 });
